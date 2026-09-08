@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius Studio</title>
+    <link rel="icon" href="img/GsLogo.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-[#1e1e1e] font-sans text-white">
+
+    <nav class="bg-[#141414] fixed w-screen py-4 whitespace-nowrap top-0 z-50">
+        <div class="mx-4 md:mx-10 flex flex-row justify-between items-center">
+            <div>
+                <a class="font-bold text-2xl hover:text-[#229ED9] transition duration-300" href="index.html">Genius <span>Studio</span></a>
+            </div>
+            <!--pc navbar buttons-->
+            <div class="absolute -top-[1000px] left-0 -mt-14 lg:mt-0 max-lg:bg-[#141414] w-full font-bold text-lg max-lg:transition-all max-lg:duration-300 -z-10 lg:static lg:flex-row lg:justify-between lg:top-0 lg:z-0">
+                <ul class="font-bold text-lg flex flex-col items-center justify-center gap-4 lg:gap-10 max-lg:py-10 lg:flex-row">
+                    <li class="hover:text-[#229ED9] transition duration-150 px-3 py-1"><a href="index.html">Home</a></li>
+                    <li class="hover:text-[#229ED9] transition duration-150 px-3 py-1"><a href="store.html">Store</a></li>
+                    <li class="hover:text-[#229ED9] transition duration-150 px-3 py-1"><a href="services.html">Services</a></li>
+                    <li class="hover:text-[#229ED9] transition duration-150 px-3 py-1"><a href="about.html">About</a></li>
+                    <!--mob button-->
+                    <div class="lg:hidden right-4 md:right-16 lg:right-24">
+                    <a href="contact.html" class="bg-black px-5 py-2 rounded-full hover:bg-[#229ED9] hover:text-white hover:scale-110 transition duration-500 whitespace-nowrap cursor-pointer">Contact Us</a>
+                    </div>
+                </ul>
+                
+            </div>
+        <!--pc button-->
+            <div class="font-bold text-lg lg:visible invisible right-4 md:right-16 lg:right-24 ">
+                <a href="contact.html" class="px-5 py-2 rounded-full bg-[#229ED9] text-white hover:scale-110 transition duration-500 whitespace-nowrap cursor-pointer">Contact Us</a>
+            </div>
+            <div class="toggle-btn lg:hidden">
+                <button class="align-middle hover:text-[#229ED9] transition duration-300"><svg id="mySvg" onclick="toggleContent()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg></button>
+            </div>
+        </div>
+        
+    </nav>
+    <!--mobile navbar buttons-->
+    <div class="z-10 fixed drop-menu -top-[1000px] left-0 -mt-14 lg:mt-0 max-lg:bg-[#141414] w-full font-bold text-lg max-lg:transition-all max-lg:duration-300 lg:static lg:flex-row lg:justify-between lg:top-0 lg:z-0">
+        <ul class="font-bold text-lg flex flex-col items-center justify-center gap-4 lg:gap-10 max-lg:py-10 lg:flex-row">
+            <li class="hover:text-[#229ED9] transition duration-150 px-3 py-1"><a href="index.html">Home</a></li>
+            <li class="hover:text-[#229ED9] transition duration-150 px-3 py-1"><a href="store.html">Store</a></li>
+            <li class="hover:text-[#229ED9] transition duration-150 px-3 py-1"><a href="services.html">Services</a></li>
+            <li class="hover:text-[#229ED9] transition duration-150 px-3 py-1"><a href="about.html">About</a></li>
+            <!--mob button-->
+            <div class="lg:hidden right-4 md:right-16 lg:right-24">
+            <a href="contact.html" class="px-5 py-2 rounded-full bg-[#229ED9] text-white hover:scale-110 transition duration-500 whitespace-nowrap cursor-pointer">Contact Us</a>
+            </div>
+        </ul>
+    </div>
+
+    <section class="mt-16 xl:mt-12">
+
+        <div class="w-11/12 m-auto mt-12"> <!--2nd holder-->
+            <div class="w-11/12 mx-auto max-lg:text-center grid grid-rows-1 lg:grid-cols-2 lg:gap-12">
+
+                <div> <!--texts-->
+                    <div class="m-auto">
+                        <p class="bg-[#262626] font-bold text-sm lg:text-lg px-12 py-3 mt-6 rounded-full inline-block">Contact Us</p>
+                        <h1 class="my-5 lg:my-3 text-3xl md:text-5xl font-black">Reach out to<br><span class="leading-normal">Genius Studio</span></h1>
+                        <p class="font-semibold md:text-lg lg:text-2xl">Feel free to reach out to Genius Studio for any inquiries or assistance. Please <span class="xl:hidden">tap</span><span class="max-xl:hidden">click</span> the icon through which you would like to contact us.</p>
+                    </div>
+
+                    <div class="">
+                        <div class=""> <!--email us-->
+                            <div class="bg-[#262626] w-11/12 h-auto m-auto rounded-3xl mt-8 lg:ml-0">
+                                <div class="w-11/12 md:flex m-auto gap-5">
+                                    <div class="max-md:flex"> <!--svg-->
+                                        <a class="mx-auto" href="mailto:Genius.Studio@outlook.com"><svg class="mt-5 h-14 bg-[#1e1e1e] rounded-xl px-3 py-3 max-md:mx-auto hover:text-[#229ED9] transition duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                                          </svg>
+                                        </a>                                        
+                                    </div>
+                                    <div class="md:text-left mt-5"> <!--texts-->
+                                        <h3 class="font-semibold text-xl">Email us</h3>
+                                        <a class="hover:text-[#229ED9] transition duration-300" href="mailto:Genius.Studio@outlook.com"><p class="font-semibold mt-2 mb-5 max-md:hidden">Genius.Studio@outlook.com</p></a>
+                                    </div>
+                                    <div class="flex md:hidden">
+                                        <a class="mx-auto hover:text-[#229ED9] transition duration-300" href="mailto:Genius.Studio@outlook.com"><p class="font-semibold mt-2 mb-5">Genius.Studio@outlook.com</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=""> <!--call us-->
+                            <div class="bg-[#262626] w-11/12 h-auto m-auto rounded-3xl mt-8">
+                                <div class="w-11/12 md:flex m-auto gap-5">
+                                    <div class="max-md:flex"> <!--svg-->
+                                        <a class="mx-auto" href="tel:07722124522"><svg class="mt-5 h-14 bg-[#1e1e1e] rounded-xl px-3 py-3 max-md:mx-auto hover:text-[#229ED9] transition duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                                        </svg>                                          
+                                        </a>                                          
+                                    </div>
+                                    <div class="md:text-left mt-5"> <!--texts-->
+                                        <h3 class="font-semibold text-xl">Call us</h3>
+                                        <a class="hover:text-[#229ED9] transition duration-300" href="tel:07722124522"><p class="font-semibold mt-2 mb-5 max-md:hidden">+964 772 212 4522</p></a>
+                                    </div>
+                                    <div class="flex md:hidden">
+                                        <a class="mx-auto hover:text-[#229ED9] transition duration-300" href="tel:07722124522"><p class="font-semibold mt-2 mb-5">+964 772 212 4522</p></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=""> <!--message us-->
+                            <div class="bg-[#262626] w-11/12 h-auto m-auto rounded-3xl mt-8 lg:ml-0">
+                                <div class="w-11/12 md:flex m-auto gap-5">
+                                    <div class="max-md:flex"> <!--svg-->
+                                        <a class="mx-auto">
+                                          <svg class="mt-5 h-14 bg-[#1e1e1e] rounded-xl px-3 py-3 max-md:mx-auto hover:text-[#229ED9] transition duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                                          </svg>                                                                                                                             
+                                        </a>                                    
+                                    </div>
+                                    <div class="md:text-left mt-5"> <!--texts-->
+                                        <h3 class="font-semibold text-xl">Message us</h3>
+                                    </div>
+                                </div>
+                                <div class="md:ml-28 max-md:flex max-md:mx-auto max-md:mt-5 pb-5">
+                                    <ul class="flex mx-auto gap-5 xl:gap-7">
+                                        <li><a href="https://www.facebook.com/geniusstudio.tech" target="_blank"><svg class="h-6 fill-current hover:fill-[#229ED9] transition duration-300" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 192 384"><path d="M128 128V89.9c0-17.2 3.8-25.9 30.5-25.9H192V0h-55.9C67.6 0 45 31.4 45 85.3V128H0v64h45v192h83V192h56.4l7.6-64h-64z"/></svg></a></li> <!--facebook-->
+                                        <li><a href="https://www.instagram.com/geniusstudio.tech" target="_blank"><svg class="h-6 fill-current hover:fill-[#229ED9] transition duration-300" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 24 24"><path d="M12 0C8.7 0 8.3 0 7.1.1c-1.3 0-2.2.2-3 .5C3.4.9 2.7 1.3 2 2S.9 3.3.6 4.1c-.3.8-.5 1.7-.5 3C0 8.3 0 8.7 0 12s0 3.7.1 4.9c.1 1.3.3 2.1.6 2.9.2.8.6 1.5 1.3 2.2.7.7 1.3 1.1 2.1 1.4.8.3 1.6.5 2.9.6h5c3.3 0 3.7 0 4.9-.1 1.3-.1 2.1-.3 2.9-.6.8-.3 1.5-.7 2.1-1.4.7-.7 1.1-1.3 1.4-2.1.3-.8.5-1.6.6-2.9.1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.1-.6-2.9-.2-.8-.6-1.5-1.3-2.2-.7-.7-1.3-1.1-2.1-1.4C19.1.3 18.3.1 17 0h-5zm0 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.2.4-1.3.1-1.6.1-4.9.1-3.2 0-3.6 0-4.9-.1-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.2 0-1.3-.1-1.6-.1-4.8 0-3.2 0-3.6.1-4.9 0-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.2-.4 1.3-.1 1.6-.1 4.9 0 0-.1 0 0 0 0zm0 3.6c-3.4 0-6.2 2.8-6.2 6.2 0 3.4 2.8 6.2 6.2 6.2 3.4 0 6.2-2.8 6.2-6.2 0-3.4-2.8-6.2-6.2-6.2zM12 16c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm7.8-10.4c0 .8-.6 1.4-1.4 1.4-.8 0-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4c.8 0 1.4.6 1.4 1.4z"/></svg></a></li> <!--instagram-->
+                                        <li><a href="https://wa.me/message/EVDYGDIDD2ABM1" target="_blank"><svg class="h-6 fill-current hover:fill-[#229ED9] transition duration-300" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 93 93"><path d="M46.5.5C21.1.5.5 21.1.5 46.5c0 9.6 2.9 18.7 8.4 26.5L.7 91c-.2.4-.1.8.2 1.1.3.3.7.4 1.1.3l19.7-7.2c7.4 4.8 16 7.3 24.8 7.3h.1c25.4 0 46-20.6 46-46S71.8.5 46.5.5zM72 64.2c-.3.8-1 1.7-1.4 2.4-.9 1.2-2 2.4-3 3.2-.2.2-.4.3-.6.5-.2.1-.3.2-.5.3-.8.6-1.6 1-2.3 1.2-.5.2-1.1.3-1.7.3H62c-1 0-1.6-.2-3-.7-1.1-.5-2.3-1-3.6-1.5l-.3-.2c-1.1-.5-2.2-1.1-3.3-1.6l-.4-.3c-1.1-.6-2.1-1.2-3.1-1.8l-.2-.2c-6.9-4.3-12.7-9.5-17.7-16-.5-.6-.9-1.2-1.4-1.8l-.6-.9-.6-.9c-.4-.6-.7-1.1-1.1-1.7l-.1-.1c-.3-.6-.7-1.1-1-1.7 0 0-.1-.1-.1-.2-1.6-2.8-3-5.7-4-8.5-1.1-3-1.4-4.9-.2-7 .5-.9 2.4-2.7 3.7-3.6 2.3-1.7 3.3-2.3 4.3-2.5.7-.1 1.8-.1 2.6.2.4.1.9.4 1.2.6 1.9 1.2 6.3 6.9 7.7 9.6 1 1.8 1.2 3.2.9 4.3-.3 1.2-1 1.9-3 3.4-.4.4-.9.7-1.2 1l-.2.2-.1.1c-.2.2-.3.8-.3 1.2 0 1 .7 3.3 1.9 5.1.9 1.4 2.4 3.2 4 4.6 1.8 1.6 3.4 2.7 5.2 3.6 2.1 1 3.4 1.3 4.1 1 .1-.1.3-.1.4-.2.2-.2.6-.7 1.3-1.5 1-1.3 1.5-1.8 2.3-2.2.2-.1.5-.2.7-.3 1.4-.5 2.9-.4 4.3.4 1 .5 3 1.7 4.3 2.6 1.6 1.1 5.4 4.1 6 4.8.6.7 1 1.6 1 2.6.1.6-.1 1.4-.4 2.2zM27.6 44z" class="st0"/></svg></a></li> <!--whatsapp-->
+                                        <li><a href="https://t.me/mohammedhx2" target="_blank"><svg class="h-6 fill-current hover:fill-[#229ED9] transition duration-300" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 448 376"><path d="m446.7 34.4-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9L366.7 75.3c8.3-7.4-1.8-11.5-12.9-4.1l-236 148.6L16.2 188c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 2.2c18.4-6.9 34.5 4.1 28.5 32.2z"/></svg></a></li> <!--telegram-->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=""> <!--follow us-->
+                            <div class="bg-[#262626] w-11/12 h-auto m-auto rounded-3xl mt-8">
+                                <div class="w-11/12 md:flex m-auto gap-5">
+                                    <div class="max-md:flex"> <!--svg-->
+                                        <a class="mx-auto">
+                                          <svg class="mt-5 h-14 bg-[#1e1e1e] rounded-xl px-3 py-3 max-md:mx-auto hover:text-[#229ED9] transition duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                                            </svg>                                           
+                                        </a>                                    
+                                    </div>
+                                    <div class="md:text-left mt-5"> <!--texts-->
+                                        <h3 class="font-semibold text-xl">Follow us</h3>
+                                    </div>
+                                </div>
+                                <div class="md:ml-28 max-md:flex max-md:mx-auto max-md:mt-5 pb-5">
+                                    <ul class="flex mx-auto gap-5 xl:gap-7">
+                                        <li><a href="https://www.facebook.com/geniusstudio.tech" target="_blank"><svg class="h-6 fill-current hover:fill-[#229ED9] transition duration-300" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 192 384"><path d="M128 128V89.9c0-17.2 3.8-25.9 30.5-25.9H192V0h-55.9C67.6 0 45 31.4 45 85.3V128H0v64h45v192h83V192h56.4l7.6-64h-64z"/></svg></a></li> <!--facebook-->
+                                        <li><a href="https://www.instagram.com/geniusstudio.tech" target="_blank"><svg class="h-6 fill-current hover:fill-[#229ED9] transition duration-300" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 24 24"><path d="M12 0C8.7 0 8.3 0 7.1.1c-1.3 0-2.2.2-3 .5C3.4.9 2.7 1.3 2 2S.9 3.3.6 4.1c-.3.8-.5 1.7-.5 3C0 8.3 0 8.7 0 12s0 3.7.1 4.9c.1 1.3.3 2.1.6 2.9.2.8.6 1.5 1.3 2.2.7.7 1.3 1.1 2.1 1.4.8.3 1.6.5 2.9.6h5c3.3 0 3.7 0 4.9-.1 1.3-.1 2.1-.3 2.9-.6.8-.3 1.5-.7 2.1-1.4.7-.7 1.1-1.3 1.4-2.1.3-.8.5-1.6.6-2.9.1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.1-.6-2.9-.2-.8-.6-1.5-1.3-2.2-.7-.7-1.3-1.1-2.1-1.4C19.1.3 18.3.1 17 0h-5zm0 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.2.4-1.3.1-1.6.1-4.9.1-3.2 0-3.6 0-4.9-.1-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.2 0-1.3-.1-1.6-.1-4.8 0-3.2 0-3.6.1-4.9 0-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.2-.4 1.3-.1 1.6-.1 4.9 0 0-.1 0 0 0 0zm0 3.6c-3.4 0-6.2 2.8-6.2 6.2 0 3.4 2.8 6.2 6.2 6.2 3.4 0 6.2-2.8 6.2-6.2 0-3.4-2.8-6.2-6.2-6.2zM12 16c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm7.8-10.4c0 .8-.6 1.4-1.4 1.4-.8 0-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4c.8 0 1.4.6 1.4 1.4z"/></svg></a></li> <!--instagram-->
+                                        <li><a href="https://www.youtube.com/@geniusstudiotech" target="_blank"><svg class="h-6 fill-current hover:fill-[#229ED9] transition duration-300" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1080 756"><path d="M1057.4 118.1c-12.4-46.5-49-83.1-95.5-95.5C877.7 0 540 0 540 0S202.3 0 118 22.6c-46.4 12.4-83 49-95.4 95.5C0 202.3 0 378 0 378s0 175.7 22.6 259.9c12.4 46.5 49 83.1 95.5 95.5C202.3 756 540 756 540 756s337.7 0 422-22.6c46.5-12.4 83.1-49 95.5-95.5C1080 553.7 1080 378 1080 378s0-175.7-22.6-259.9zM432 540V216l280.6 162L432 540z"/></svg></a></li> <!--youtube-->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="w-11/12 m-auto max-md:mt-8">
+                    <div>
+                        <p class="font-semibold text-lg hidden lg:text-2xl mt-16">Your digital success is our priority, seamlessly blending Graphic Design, Motion Graphics, and Original Software Solutions for uniquely tailored excellence.</p>
+                    </div>
+                    <div class="gap-5 md:mt-16"> <!--pics & vids-->
+                        
+                        <div class="w-auto h-auto bg-black rounded-lg md:rounded-xl lg:rounded-3xl overflow-hidden"><img class="object-cover" src="img/gdban.webp" alt="Genius Studio QRCode"></div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <hr class="mt-16 w-3/5 h-1 mx-auto bg-[#eaeaea] border-0 rounded"> <!--seperator-->
+
+    <footer>
+        
+        <div class="bg-[#2e2e2e] w-11/12 md:w-1/2 lg:w-1/3 xl:w-1/4 h-auto mt-16 mb-16 rounded-3xl mx-auto">
+            <div class="">
+                <div class="flex justify-center mx-auto">
+                    <a class="my-5" href="index.html"><img class="h-16" src="img/GsLogo.svg" alt="Genius Studio"></a>
+                </div>
+                <div class="flex">
+                    <ul class="flex mx-auto gap-10">
+                        <li><a href="https://www.facebook.com/geniusstudio.tech" target="_blank"><svg class="h-6 fill-current hover:fill-[#229ED9] transition duration-300" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 192 384"><path d="M128 128V89.9c0-17.2 3.8-25.9 30.5-25.9H192V0h-55.9C67.6 0 45 31.4 45 85.3V128H0v64h45v192h83V192h56.4l7.6-64h-64z"/></svg></a></li> <!--facebook-->
+                        <li><a href="https://www.instagram.com/geniusstudio.tech" target="_blank"><svg class="h-6 fill-current hover:fill-[#229ED9] transition duration-300" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 24 24"><path d="M12 0C8.7 0 8.3 0 7.1.1c-1.3 0-2.2.2-3 .5C3.4.9 2.7 1.3 2 2S.9 3.3.6 4.1c-.3.8-.5 1.7-.5 3C0 8.3 0 8.7 0 12s0 3.7.1 4.9c.1 1.3.3 2.1.6 2.9.2.8.6 1.5 1.3 2.2.7.7 1.3 1.1 2.1 1.4.8.3 1.6.5 2.9.6h5c3.3 0 3.7 0 4.9-.1 1.3-.1 2.1-.3 2.9-.6.8-.3 1.5-.7 2.1-1.4.7-.7 1.1-1.3 1.4-2.1.3-.8.5-1.6.6-2.9.1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.1-.6-2.9-.2-.8-.6-1.5-1.3-2.2-.7-.7-1.3-1.1-2.1-1.4C19.1.3 18.3.1 17 0h-5zm0 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.2.4-1.3.1-1.6.1-4.9.1-3.2 0-3.6 0-4.9-.1-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.2 0-1.3-.1-1.6-.1-4.8 0-3.2 0-3.6.1-4.9 0-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.2-.4 1.3-.1 1.6-.1 4.9 0 0-.1 0 0 0 0zm0 3.6c-3.4 0-6.2 2.8-6.2 6.2 0 3.4 2.8 6.2 6.2 6.2 3.4 0 6.2-2.8 6.2-6.2 0-3.4-2.8-6.2-6.2-6.2zM12 16c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm7.8-10.4c0 .8-.6 1.4-1.4 1.4-.8 0-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4c.8 0 1.4.6 1.4 1.4z"/></svg></a></li> <!--instagram-->
+                        <li><a href="https://www.youtube.com/@geniusstudiotech" target="_blank"><svg class="h-6 fill-current hover:fill-[#229ED9] transition duration-300" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 1080 756"><path d="M1057.4 118.1c-12.4-46.5-49-83.1-95.5-95.5C877.7 0 540 0 540 0S202.3 0 118 22.6c-46.4 12.4-83 49-95.4 95.5C0 202.3 0 378 0 378s0 175.7 22.6 259.9c12.4 46.5 49 83.1 95.5 95.5C202.3 756 540 756 540 756s337.7 0 422-22.6c46.5-12.4 83.1-49 95.5-95.5C1080 553.7 1080 378 1080 378s0-175.7-22.6-259.9zM432 540V216l280.6 162L432 540z"/></svg></a></li> <!--youtube-->
+                        <li><a href="https://wa.me/message/EVDYGDIDD2ABM1" target="_blank"><svg class="h-6 fill-current hover:fill-[#229ED9] transition duration-300" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 93 93"><path d="M46.5.5C21.1.5.5 21.1.5 46.5c0 9.6 2.9 18.7 8.4 26.5L.7 91c-.2.4-.1.8.2 1.1.3.3.7.4 1.1.3l19.7-7.2c7.4 4.8 16 7.3 24.8 7.3h.1c25.4 0 46-20.6 46-46S71.8.5 46.5.5zM72 64.2c-.3.8-1 1.7-1.4 2.4-.9 1.2-2 2.4-3 3.2-.2.2-.4.3-.6.5-.2.1-.3.2-.5.3-.8.6-1.6 1-2.3 1.2-.5.2-1.1.3-1.7.3H62c-1 0-1.6-.2-3-.7-1.1-.5-2.3-1-3.6-1.5l-.3-.2c-1.1-.5-2.2-1.1-3.3-1.6l-.4-.3c-1.1-.6-2.1-1.2-3.1-1.8l-.2-.2c-6.9-4.3-12.7-9.5-17.7-16-.5-.6-.9-1.2-1.4-1.8l-.6-.9-.6-.9c-.4-.6-.7-1.1-1.1-1.7l-.1-.1c-.3-.6-.7-1.1-1-1.7 0 0-.1-.1-.1-.2-1.6-2.8-3-5.7-4-8.5-1.1-3-1.4-4.9-.2-7 .5-.9 2.4-2.7 3.7-3.6 2.3-1.7 3.3-2.3 4.3-2.5.7-.1 1.8-.1 2.6.2.4.1.9.4 1.2.6 1.9 1.2 6.3 6.9 7.7 9.6 1 1.8 1.2 3.2.9 4.3-.3 1.2-1 1.9-3 3.4-.4.4-.9.7-1.2 1l-.2.2-.1.1c-.2.2-.3.8-.3 1.2 0 1 .7 3.3 1.9 5.1.9 1.4 2.4 3.2 4 4.6 1.8 1.6 3.4 2.7 5.2 3.6 2.1 1 3.4 1.3 4.1 1 .1-.1.3-.1.4-.2.2-.2.6-.7 1.3-1.5 1-1.3 1.5-1.8 2.3-2.2.2-.1.5-.2.7-.3 1.4-.5 2.9-.4 4.3.4 1 .5 3 1.7 4.3 2.6 1.6 1.1 5.4 4.1 6 4.8.6.7 1 1.6 1 2.6.1.6-.1 1.4-.4 2.2zM27.6 44z" class="st0"/></svg></a></li> <!--whatsapp-->
+                        <li><a href="https://t.me/mohammedhx2" target="_blank"><svg class="h-6 fill-current hover:fill-[#229ED9] transition duration-300" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 448 376"><path d="m446.7 34.4-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9L366.7 75.3c8.3-7.4-1.8-11.5-12.9-4.1l-236 148.6L16.2 188c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 2.2c18.4-6.9 34.5 4.1 28.5 32.2z"/></svg></a></li> <!--telegram-->
+                    </ul>
+                </div>
+                <div class="flex">
+                    <p class="flex mx-auto mt-8 font-semibold">© 2024 <span class="ml-2"><a class="hover:text-[#229ED9] transition duration-300" href="https://www.facebook.com/geniusstudio.tech" target="_blank">Genius Studio</a></span></p>
+                </div>
+                <div class="flex">
+                    <p class="flex justify-center mx-auto mt-1 mb-5 font-semibold">@<a class="ml-1 hover:text-[#229ED9] transition duration-300" href="https://www.facebook.com/mohammedhx2" target="_blank">Mohammed Hassan</a></p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--scripts here-->
+    <script>
+        const toggleBtn = document.querySelector(".toggle-btn");
+        const dropDown = document.querySelector(".drop-menu")
+
+        toggleBtn.addEventListener("click", () => {
+            dropDown.classList.toggle('top-28');
+        })
+
+        var contentToggle = false;
+
+        function toggleContent() {
+        var mySvg = document.getElementById('mySvg');
+
+        if (contentToggle) {
+            mySvg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />';
+        } else {
+            mySvg.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />';
+        }
+
+        contentToggle = !contentToggle;
+
+        requestAnimationFrame(function() {
+            mySvg.style.opacity = '0';
+            requestAnimationFrame(function () {
+                mySvg.style.opacity = '1';
+            });
+        });
+        }
+    </script>
+
+</body>
+</html>
